@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+        crossorigin="anonymous">
     <link href="./dist/css/style.css" rel="stylesheet">
 </head>
 
@@ -18,84 +20,214 @@
             </div>
             <div class="header-right">
                 <div class="header-right-top">
-                    <div class="socials">socials</div>
-                    <div class="search">search</div>
+                    <div class="socials">
+                        <a href="#">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-github-alt fa-lg"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <i class="fas fa-search fa-lg"></i>
+                    </div>
                 </div>
-                <div class="header-right-bottom">
-                    <nav class="navigation">
+                <nav class="navigation">
+                    <a href="#">
                         <div class="navigation-item">Home</div>
+                    </a>
+                    <a href="#">
                         <div class="navigation-item">About us</div>
-                        <div class="navigation-item">Trainings</div>
+                    </a>
+                    <a href="#">
                         <div class="navigation-item">Services</div>
+                    </a>
+                    <a href="#">
                         <div class="navigation-item">Resources</div>
-                    </nav>
-                </div>
+                    </a>
+                    <a href="#">
+                        <div class="navigation-item">Trainings</div>
+                    </a>
+                </nav>
             </div>
         </header>
         <main>
             <article class="article">
-                <div class="article-top">
-                    <img src="#" alt="logo" class="article-logo">
-                    <h2 class="article-name">name</h2>
-                    <div class="article-date">12 days ago</div>
-                </div>
-                <p class="article-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur impedit, expedita excepturi, praesentium error velit eligendi culpa consequatur autem quod hic maxime reiciendis, voluptate incidunt amet optio eum enim dicta!</p>
+                <div class="article-logo article-logo-1"></div>
+                <h2 class="article-name">Modern Javascript and Asynchronous Programming</h2>
+                <div class="article-date">12 days ago</div>
+                <p class="article-content">Since the 6th version of the ECMAScript specification was released back in 2015, there have been several
+                    new features introduced or proposed for the JavaScript language that are focused on providing easier
+                    ways to handle asynchronous programming, or dealing with collections of objects (like iterables/iterators).
+                    These two topics overlap when considering asynchronous streams of data, the observable pattern, and reactive
+                    programming in general, with all the relationships between data producers and consumers. This is a very
+                    broad topic, so understanding first Generator Functions/Yield and Async/await can serve as a good introduction
+                    to some of these concepts.</p>
                 <div class="article-bottom">
-                    <div class="article-rating">rating</div>
-                    <div class="article-comments">comments</div>
+                    <div class="article-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="article-comments">
+                        <i class="fas fa-comment-dots"></i> comments</div>
                 </div>
             </article>
             <article class="article">
-                    <div class="article-top">
-                            <img src="#" alt="logo" class="article-logo">
-                            <h2 class="article-name">name</h2>
-                            <div class="article-date">12 days ago</div>
-                        </div>
-                        <p class="article-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur impedit, expedita excepturi, praesentium error velit eligendi culpa consequatur autem quod hic maxime reiciendis, voluptate incidunt amet optio eum enim dicta!</p>
-                        <div class="article-bottom">
-                            <div class="article-rating">rating</div>
-                            <div class="article-comments">comments</div>
-                        </div>
+                <div class="article-logo article-logo-1"></div>
+                <h2 class="article-name">Modern Javascript and Asynchronous Programming</h2>
+                <div class="article-date">12 days ago</div>
+                <p class="article-content">Since the 6th version of the ECMAScript specification was released back in 2015, there have been several
+                    new features introduced or proposed for the JavaScript language that are focused on providing easier
+                    ways to handle asynchronous programming, or dealing with collections of objects (like iterables/iterators).
+                    These two topics overlap when considering asynchronous streams of data, the observable pattern, and reactive
+                    programming in general, with all the relationships between data producers and consumers. This is a very
+                    broad topic, so understanding first Generator Functions/Yield and Async/await can serve as a good introduction
+                    to some of these concepts.</p>
+                <div class="article-bottom">
+                    <div class="article-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="article-comments">
+                        <i class="fas fa-comment-dots"></i> comments</div>
+                </div>
             </article>
             <article class="article">
-                    <div class="article-top">
-                            <img src="#" alt="logo" class="article-logo">
-                            <h2 class="article-name">name</h2>
-                            <div class="article-date">12 days ago</div>
-                        </div>
-                        <p class="article-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur impedit, expedita excepturi, praesentium error velit eligendi culpa consequatur autem quod hic maxime reiciendis, voluptate incidunt amet optio eum enim dicta!</p>
-                        <div class="article-bottom">
-                            <div class="article-rating">rating</div>
-                            <div class="article-comments">comments</div>
-                        </div>
+                <div class="article-logo article-logo-1"></div>
+                <h2 class="article-name">Modern Javascript and Asynchronous Programming</h2>
+                <div class="article-date">12 days ago</div>
+                <p class="article-content">Since the 6th version of the ECMAScript specification was released back in 2015, there have been several
+                    new features introduced or proposed for the JavaScript language that are focused on providing easier
+                    ways to handle asynchronous programming, or dealing with collections of objects (like iterables/iterators).
+                    These two topics overlap when considering asynchronous streams of data, the observable pattern, and reactive
+                    programming in general, with all the relationships between data producers and consumers. This is a very
+                    broad topic, so understanding first Generator Functions/Yield and Async/await can serve as a good introduction
+                    to some of these concepts.</p>
+                <div class="article-bottom">
+                    <div class="article-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="article-comments">
+                        <i class="fas fa-comment-dots"></i> comments</div>
+                </div>
             </article>
             <article class="article">
-                    <div class="article-top">
-                            <img src="#" alt="logo" class="article-logo">
-                            <h2 class="article-name">name</h2>
-                            <div class="article-date">12 days ago</div>
-                        </div>
-                        <p class="article-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur impedit, expedita excepturi, praesentium error velit eligendi culpa consequatur autem quod hic maxime reiciendis, voluptate incidunt amet optio eum enim dicta!</p>
-                        <div class="article-bottom">
-                            <div class="article-rating">rating</div>
-                            <div class="article-comments">comments</div>
-                        </div>
+                <div class="article-logo article-logo-1"></div>
+                <h2 class="article-name">Modern Javascript and Asynchronous Programming</h2>
+                <div class="article-date">12 days ago</div>
+                <p class="article-content">Since the 6th version of the ECMAScript specification was released back in 2015, there have been several
+                    new features introduced or proposed for the JavaScript language that are focused on providing easier
+                    ways to handle asynchronous programming, or dealing with collections of objects (like iterables/iterators).
+                    These two topics overlap when considering asynchronous streams of data, the observable pattern, and reactive
+                    programming in general, with all the relationships between data producers and consumers. This is a very
+                    broad topic, so understanding first Generator Functions/Yield and Async/await can serve as a good introduction
+                    to some of these concepts.</p>
+                <div class="article-bottom">
+                    <div class="article-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="article-comments">
+                        <i class="fas fa-comment-dots"></i> comments</div>
+                </div>
             </article>
             <article class="article">
-                    <div class="article-top">
-                            <img src="#" alt="logo" class="article-logo">
-                            <h2 class="article-name">name</h2>
-                            <div class="article-date">12 days ago</div>
-                        </div>
-                        <p class="article-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur impedit, expedita excepturi, praesentium error velit eligendi culpa consequatur autem quod hic maxime reiciendis, voluptate incidunt amet optio eum enim dicta!</p>
-                        <div class="article-bottom">
-                            <div class="article-rating">rating</div>
-                            <div class="article-comments">comments</div>
-                        </div>
+                <div class="article-logo article-logo-1"></div>
+                <h2 class="article-name">Modern Javascript and Asynchronous Programming</h2>
+                <div class="article-date">12 days ago</div>
+                <p class="article-content">Since the 6th version of the ECMAScript specification was released back in 2015, there have been several
+                    new features introduced or proposed for the JavaScript language that are focused on providing easier
+                    ways to handle asynchronous programming, or dealing with collections of objects (like iterables/iterators).
+                    These two topics overlap when considering asynchronous streams of data, the observable pattern, and reactive
+                    programming in general, with all the relationships between data producers and consumers. This is a very
+                    broad topic, so understanding first Generator Functions/Yield and Async/await can serve as a good introduction
+                    to some of these concepts.</p>
+                <div class="article-bottom">
+                    <div class="article-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="article-comments">
+                        <i class="fas fa-comment-dots"></i> comments</div>
+                </div>
             </article>
         </main>
         <aside>
-            Aside
+            <div class="author">
+                <img src="./dist/img/photo.jpg" alt="" class="author-photo">
+                <h2 class="author-name">Yuliia Kuznietsova</h2>
+                <p class="author-about-me">Hello! I'm Yuliia and this is my blog</p>
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/julia.chuprina.1">
+                    <i class="fab fa-facebook-f fa-lg"></i>
+                </a>
+                <a href="https://github.com/k-jul">
+                    <i class="fab fa-github-alt fa-lg"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yuliia-kuznietsova-a62210161">
+                    <i class="fab fa-linkedin-in fa-lg"></i>
+                </a>
+            </div>
+            <form name="subscribe" class="form">
+                <label>
+                    Name
+                    <input type="text">
+                </label>
+                <br>
+                <label>
+                    Email
+                    <input type="email">
+                </label>
+                <div class="btn">Subscribe</div>
+            </form>
+            <div class="search">
+                <input type="text" id="search-text">
+                <label for="search-text">Search<i class="fas fa-search fa-lg"></i>
+                </label>
+            </div>
+            <div class="tags">
+                <div class="tags-item">#tag1</div>
+                <div class="tags-item">#tag2</div>
+                <div class="tags-item">#tag3</div>
+                <div class="tags-item">#tag4</div>
+                <div class="tags-item">#tag5</div>
+                <div class="tags-item">#tag6</div>
+                <div class="tags-item">#tag7</div>
+            </div>
+            <div class="comments">
+                <div class="comments-item">
+                    <div class="comments-picture">Picture</div>
+                    <div class="comments-body">Comment</div>
+                </div>
+                <div class="comments-item">
+                    <div class="comments-picture">Picture</div>
+                    <div class="comments-body">Comment</div>
+                </div>
+                <div class="comments-item">
+                    <div class="comments-picture">Picture</div>
+                    <div class="comments-body">Comment</div>
+                </div>
+            </div>
         </aside>
         <footer>
             Footer

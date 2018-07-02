@@ -1,9 +1,10 @@
 .wrapper {
     display:grid;
+    grid-row-gap:20px;
     grid-template-areas: "header header header"
                           "main  main   aside"
                           "main  main   aside"
                           "main  main   aside"
                           "main  main   aside"
-                          "footer footer footer"
+                          "footer footer footer";
 }
