@@ -1,0 +1,9 @@
+.wrapper {
+    display:grid;
+    grid-template-areas: "header header header"
+                          "main  main   aside"
+                          "main  main   aside"
+                          "main  main   aside"
+                          "main  main   aside"
+                          "footer footer footer"
+}

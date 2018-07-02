@@ -3,11 +3,19 @@ html {
 }
 
 body {
-    font-family: "Merriweather" sans-serif;
+    font-family: merriweather sans, sans-serif;
+    background-color: lightgrey;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .wrapper {
+    height: 100vh;
     max-width: 1200px;
     margin:auto;
-    border: 1px solid black;
+    border:none;
+    background-color: #fff;
 }
+
