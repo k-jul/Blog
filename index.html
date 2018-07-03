@@ -15,25 +15,27 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <a href = "#"><div class="header-left"> </div></a>
+            <a href="#">
+                <div class="logo logo-big"> </div>
+            </a>
             <div class="header-right">
                 <div class="header-right-top">
                     <div class="socials">
                         <a href="#" class="fb">
                             <i class="fab fa-facebook-f fa-lg"></i>
                         </a>
-                        <a href="#" class = "git">
+                        <a href="#" class="git">
                             <i class="fab fa-github-alt fa-lg"></i>
                         </a>
-                        <a href="#" class = "linked">
+                        <a href="#" class="linked">
                             <i class="fab fa-linkedin-in fa-lg"></i>
                         </a>
                         <a href="#" class="twitter">
-                            <i class="fab fa-twitter fa-lg"></i>                       
-                         </a>
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
                     </div>
-                    <div class="search">
-                        <input type = "text" placeholder = "Search" class = "search-field">
+                    <div class="header-search">
+                        <input type="text" placeholder="Search" class="search-field">
                         <i class="fas fa-search fa-lg"></i>
                     </div>
                 </div>
@@ -58,8 +60,8 @@
         </header>
         <main>
             <article class="article">
-                <div class = "article-logo-wrapper">
-                <div class="article-logo-1"></div>
+                <div class="article-logo-wrapper">
+                    <div class="article-logo-1"></div>
                 </div>
                 <h2 class="article-name">Modern Javascript and Asynchronous Programming</h2>
                 <div class="article-date">03.07.2018</div>
@@ -77,8 +79,8 @@
                 </div>
             </article>
             <article class="article">
-                <div class = "article-logo-wrapper">
-                <div class="article-logo article-logo-2"></div>
+                <div class="article-logo-wrapper">
+                    <div class="article-logo article-logo-2"></div>
                 </div>
                 <h2 class="article-name">Top JavaScript Libraries & Tech to Learn in 2018</h2>
                 <div class="article-date">15.06.2018</div>
@@ -96,12 +98,13 @@
                 </div>
             </article>
             <article class="article">
-                <div class = "article-logo-wrapper">
-                <div class="article-logo article-logo-3"></div>
+                <div class="article-logo-wrapper">
+                    <div class="article-logo article-logo-3"></div>
                 </div>
                 <h2 class="article-name">Learn Node.js -top articles from last year (v.2018)</h2>
                 <div class="article-date">10.06.2018</div>
-                <p class="article-content">Best Node.js tutorials from last year, where experienced developers share their lessons, insights and mistakes working in Node.js.</p>
+                <p class="article-content">Best Node.js tutorials from last year, where experienced developers share their lessons, insights and mistakes
+                    working in Node.js.</p>
                 <div class="article-bottom">
                     <div class="article-rating">
                         <i class="fas fa-star"></i>
@@ -115,8 +118,8 @@
                 </div>
             </article>
             <article class="article">
-                    <div class = "article-logo-wrapper">
-                <div class="article-logo article-logo-4"></div>
+                <div class="article-logo-wrapper">
+                    <div class="article-logo article-logo-4"></div>
                 </div>
                 <h2 class="article-name">Modern JavaScript From The Beginning</h2>
                 <div class="article-date">25.05.2018</div>
@@ -134,8 +137,8 @@
                 </div>
             </article>
             <article class="article">
-                    <div class = "article-logo-wrapper">
-                <div class="article-logo article-logo-5"></div>
+                <div class="article-logo-wrapper">
+                    <div class="article-logo article-logo-5"></div>
                 </div>
                 <h2 class="article-name">Advanced CSS tricks and techniques</h2>
                 <div class="article-date">10.04.2018</div>
@@ -160,56 +163,90 @@
                 <p class="author-about-me">Hello! I'm Yuliia and this is my blog</p>
             </div>
             <div class="socials">
-                    <a href="#" class="fb">
-                        <i class="fab fa-facebook-f fa-lg"></i>
-                    </a>
-                    <a href="#" class = "git">
-                        <i class="fab fa-github-alt fa-lg"></i>
-                    </a>
-                    <a href="#" class = "linked">
-                        <i class="fab fa-linkedin-in fa-lg"></i>
-                    </a>
-                    <a href="#" class="twitter">
-                        <i class="fab fa-twitter fa-lg"></i>                       
-                     </a>
-                </div>
+                <a href="#" class="fb">
+                    <i class="fab fa-facebook-f fa-lg"></i>
+                </a>
+                <a href="#" class="git">
+                    <i class="fab fa-github-alt fa-lg"></i>
+                </a>
+                <a href="#" class="linked">
+                    <i class="fab fa-linkedin-in fa-lg"></i>
+                </a>
+                <a href="#" class="twitter">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+            </div>
             <form name="subscribe" class="form">
-                    <input type="text" placeholder="Name">
-               <br>
-                    <input type="email" placeholder="Email">
+                <input type="text" placeholder="Name">
+                <br>
+                <input type="email" placeholder="Email">
                 <div class="btn">Subscribe</div>
             </form>
             <div class="search">
-                <input type="text" id="search-text">
-                <label for="search-text">Search<i class="fas fa-search fa-lg"></i>
-                </label>
+                <input type="text" class="search-text">
+                <button class="search-btn">Search
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
             <div class="tags">
-                <div class="tags-item">#tag1</div>
-                <div class="tags-item">#tag2</div>
-                <div class="tags-item">#tag3</div>
-                <div class="tags-item">#tag4</div>
-                <div class="tags-item">#tag5</div>
-                <div class="tags-item">#tag6</div>
-                <div class="tags-item">#tag7</div>
+                <div class="tags-item">#frontend</div>
+                <div class="tags-item">#javascript</div>
+                <div class="tags-item">#js</div>
+                <div class="tags-item">#nodejs</div>
+                <div class="tags-item">#html</div>
+                <div class="tags-item">#css</div>
+                <div class="tags-item">#programming</div>
             </div>
             <div class="comments">
                 <div class="comments-item">
-                    <div class="comments-picture">Picture</div>
-                    <div class="comments-body">Comment</div>
+                    <div class="comments-item-picture user-1"></div>
+                    <div class="comments-item-body">
+                        <h3 class="user-name">John Doe</h3>
+                        <div class="comments-item-text">This is the best site ever! Please continue the same way!</div>
+                    </div>
                 </div>
                 <div class="comments-item">
-                    <div class="comments-picture">Picture</div>
-                    <div class="comments-body">Comment</div>
+                    <div class="comments-item-picture user-2"></div>
+                    <div class="comments-item-body">
+                        <h3 class="user-name">Thomas Roth</h3>
+                        <div class="comments-item-text">One of sites among many quite similar ones, but nice</div>
+                    </div>
                 </div>
                 <div class="comments-item">
-                    <div class="comments-picture">Picture</div>
-                    <div class="comments-body">Comment</div>
+                    <div class="comments-item-picture user-3"></div>
+                    <div class="comments-item-body">
+                        <h3 class="user-name">Luis Barbes</h3>
+                        <div class="comments-item-text">Could you please post more articles on node.js?</div>
+                    </div>
                 </div>
             </div>
         </aside>
-        <footer>
-            Footer
+        <footer class = "footer">
+            <div class = "footer-left">
+                <div class="logo logo-small"></div>
+                <div class ="copyright"> &#169; All rights reserved</div>
+            </div>
+            <nav class="navigation nav-footer">
+                    <a href="#">
+                        <div class="navigation-item">Home</div>
+                    </a>
+                    <a href="#">
+                        <div class="navigation-item">About us</div>
+                    </a>
+                    <a href="#">
+                        <div class="navigation-item">Services</div>
+                    </a>
+                    <a href="#">
+                        <div class="navigation-item">Resources</div>
+                    </a>
+                    <a href="#">
+                        <div class="navigation-item">Trainings</div>
+                    </a>
+                </nav>
+            <div class = "footer-right">
+                <div class = "email">Email: kuznietsova.j&#64;gmail.com</div>
+                <div class = "phone">Phone: +38 (068) 112-40-17</div>
+            </div>
         </footer>
     </div>
 </body>
