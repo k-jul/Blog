@@ -24,5 +24,8 @@
     "gulp-plumber": "^1.2.0",
     "gulp-sass": "^4.0.1",
     "node-normalize-scss": "^8.0.0"
+  },
+  "dependencies": {
+    "hamburgers": "^0.9.3"
   }
 }
