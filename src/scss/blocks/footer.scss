@@ -18,7 +18,12 @@
 
     &-right {
         font-size: 12px;
+
     }
+}
+
+.email > a{
+    color:white;
 }
 
 .logo-small {
@@ -30,9 +35,6 @@
     margin-left: 10px;
 }
 
-// .nav-footer {
-//     flex-direction:column;
-// }
 .nav-footer > a {
     margin-right: 10px;
     color: white;
