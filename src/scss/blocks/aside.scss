@@ -29,6 +29,7 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;  
+    width: 100%;
     border:1px solid lightgrey;
     box-shadow: 2px 2px 2px lightgrey;
     background-color: $darkestColor;
@@ -36,6 +37,7 @@ aside {
     padding: 20px;
     box-sizing: border-box;
 }
+
 
 .btn {
     margin-top:20px;

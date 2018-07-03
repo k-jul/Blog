@@ -15,23 +15,25 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header-left">
-                <img src="dist/img/logo.png" alt="blog logo" class="logo">
-            </div>
+            <a href = "#"><div class="header-left"> </div></a>
             <div class="header-right">
                 <div class="header-right-top">
                     <div class="socials">
-                        <a href="#">
+                        <a href="#" class="fb">
                             <i class="fab fa-facebook-f fa-lg"></i>
                         </a>
-                        <a href="#">
+                        <a href="#" class = "git">
                             <i class="fab fa-github-alt fa-lg"></i>
                         </a>
-                        <a href="#">
+                        <a href="#" class = "linked">
                             <i class="fab fa-linkedin-in fa-lg"></i>
                         </a>
+                        <a href="#" class="twitter">
+                            <i class="fab fa-twitter fa-lg"></i>                       
+                         </a>
                     </div>
                     <div class="search">
+                        <input type = "text" placeholder = "Search" class = "search-field">
                         <i class="fas fa-search fa-lg"></i>
                     </div>
                 </div>
@@ -56,16 +58,12 @@
         </header>
         <main>
             <article class="article">
-                <div class="article-logo article-logo-1"></div>
+                <div class = "article-logo-wrapper">
+                <div class="article-logo-1"></div>
+                </div>
                 <h2 class="article-name">Modern Javascript and Asynchronous Programming</h2>
-                <div class="article-date">12 days ago</div>
-                <p class="article-content">Since the 6th version of the ECMAScript specification was released back in 2015, there have been several
-                    new features introduced or proposed for the JavaScript language that are focused on providing easier
-                    ways to handle asynchronous programming, or dealing with collections of objects (like iterables/iterators).
-                    These two topics overlap when considering asynchronous streams of data, the observable pattern, and reactive
-                    programming in general, with all the relationships between data producers and consumers. This is a very
-                    broad topic, so understanding first Generator Functions/Yield and Async/await can serve as a good introduction
-                    to some of these concepts.</p>
+                <div class="article-date">03.07.2018</div>
+                <p class="article-content">Several new features introduced to handle asynchronous programming in JS.</p>
                 <div class="article-bottom">
                     <div class="article-rating">
                         <i class="fas fa-star"></i>
@@ -79,16 +77,31 @@
                 </div>
             </article>
             <article class="article">
-                <div class="article-logo article-logo-1"></div>
-                <h2 class="article-name">Modern Javascript and Asynchronous Programming</h2>
-                <div class="article-date">12 days ago</div>
-                <p class="article-content">Since the 6th version of the ECMAScript specification was released back in 2015, there have been several
-                    new features introduced or proposed for the JavaScript language that are focused on providing easier
-                    ways to handle asynchronous programming, or dealing with collections of objects (like iterables/iterators).
-                    These two topics overlap when considering asynchronous streams of data, the observable pattern, and reactive
-                    programming in general, with all the relationships between data producers and consumers. This is a very
-                    broad topic, so understanding first Generator Functions/Yield and Async/await can serve as a good introduction
-                    to some of these concepts.</p>
+                <div class = "article-logo-wrapper">
+                <div class="article-logo article-logo-2"></div>
+                </div>
+                <h2 class="article-name">Top JavaScript Libraries & Tech to Learn in 2018</h2>
+                <div class="article-date">15.06.2018</div>
+                <p class="article-content">Which learning topics will give you the highest chance of a return on the time you invest learning them?</p>
+                <div class="article-bottom">
+                    <div class="article-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="article-comments">
+                        <i class="fas fa-comment-dots"></i> comments</div>
+                </div>
+            </article>
+            <article class="article">
+                <div class = "article-logo-wrapper">
+                <div class="article-logo article-logo-3"></div>
+                </div>
+                <h2 class="article-name">Learn Node.js -top articles from last year (v.2018)</h2>
+                <div class="article-date">10.06.2018</div>
+                <p class="article-content">Best Node.js tutorials from last year, where experienced developers share their lessons, insights and mistakes working in Node.js.</p>
                 <div class="article-bottom">
                     <div class="article-rating">
                         <i class="fas fa-star"></i>
@@ -102,22 +115,18 @@
                 </div>
             </article>
             <article class="article">
-                <div class="article-logo article-logo-1"></div>
-                <h2 class="article-name">Modern Javascript and Asynchronous Programming</h2>
-                <div class="article-date">12 days ago</div>
-                <p class="article-content">Since the 6th version of the ECMAScript specification was released back in 2015, there have been several
-                    new features introduced or proposed for the JavaScript language that are focused on providing easier
-                    ways to handle asynchronous programming, or dealing with collections of objects (like iterables/iterators).
-                    These two topics overlap when considering asynchronous streams of data, the observable pattern, and reactive
-                    programming in general, with all the relationships between data producers and consumers. This is a very
-                    broad topic, so understanding first Generator Functions/Yield and Async/await can serve as a good introduction
-                    to some of these concepts.</p>
+                    <div class = "article-logo-wrapper">
+                <div class="article-logo article-logo-4"></div>
+                </div>
+                <h2 class="article-name">Modern JavaScript From The Beginning</h2>
+                <div class="article-date">25.05.2018</div>
+                <p class="article-content">Learn and build projects with pure JavaScript (No frameworks or libraries)</p>
                 <div class="article-bottom">
                     <div class="article-rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
                     <div class="article-comments">
@@ -125,39 +134,12 @@
                 </div>
             </article>
             <article class="article">
-                <div class="article-logo article-logo-1"></div>
-                <h2 class="article-name">Modern Javascript and Asynchronous Programming</h2>
-                <div class="article-date">12 days ago</div>
-                <p class="article-content">Since the 6th version of the ECMAScript specification was released back in 2015, there have been several
-                    new features introduced or proposed for the JavaScript language that are focused on providing easier
-                    ways to handle asynchronous programming, or dealing with collections of objects (like iterables/iterators).
-                    These two topics overlap when considering asynchronous streams of data, the observable pattern, and reactive
-                    programming in general, with all the relationships between data producers and consumers. This is a very
-                    broad topic, so understanding first Generator Functions/Yield and Async/await can serve as a good introduction
-                    to some of these concepts.</p>
-                <div class="article-bottom">
-                    <div class="article-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="article-comments">
-                        <i class="fas fa-comment-dots"></i> comments</div>
+                    <div class = "article-logo-wrapper">
+                <div class="article-logo article-logo-5"></div>
                 </div>
-            </article>
-            <article class="article">
-                <div class="article-logo article-logo-1"></div>
-                <h2 class="article-name">Modern Javascript and Asynchronous Programming</h2>
-                <div class="article-date">12 days ago</div>
-                <p class="article-content">Since the 6th version of the ECMAScript specification was released back in 2015, there have been several
-                    new features introduced or proposed for the JavaScript language that are focused on providing easier
-                    ways to handle asynchronous programming, or dealing with collections of objects (like iterables/iterators).
-                    These two topics overlap when considering asynchronous streams of data, the observable pattern, and reactive
-                    programming in general, with all the relationships between data producers and consumers. This is a very
-                    broad topic, so understanding first Generator Functions/Yield and Async/await can serve as a good introduction
-                    to some of these concepts.</p>
+                <h2 class="article-name">Advanced CSS tricks and techniques</h2>
+                <div class="article-date">10.04.2018</div>
+                <p class="article-content">This article is a compilation of fresh, advanced tips and techniques to master your CSS skills.</p>
                 <div class="article-bottom">
                     <div class="article-rating">
                         <i class="fas fa-star"></i>
@@ -178,26 +160,23 @@
                 <p class="author-about-me">Hello! I'm Yuliia and this is my blog</p>
             </div>
             <div class="socials">
-                <a href="https://www.facebook.com/julia.chuprina.1">
-                    <i class="fab fa-facebook-f fa-lg"></i>
-                </a>
-                <a href="https://github.com/k-jul">
-                    <i class="fab fa-github-alt fa-lg"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/yuliia-kuznietsova-a62210161">
-                    <i class="fab fa-linkedin-in fa-lg"></i>
-                </a>
-            </div>
+                    <a href="#" class="fb">
+                        <i class="fab fa-facebook-f fa-lg"></i>
+                    </a>
+                    <a href="#" class = "git">
+                        <i class="fab fa-github-alt fa-lg"></i>
+                    </a>
+                    <a href="#" class = "linked">
+                        <i class="fab fa-linkedin-in fa-lg"></i>
+                    </a>
+                    <a href="#" class="twitter">
+                        <i class="fab fa-twitter fa-lg"></i>                       
+                     </a>
+                </div>
             <form name="subscribe" class="form">
-                <label>
-                    Name
-                    <input type="text">
-                </label>
-                <br>
-                <label>
-                    Email
-                    <input type="email">
-                </label>
+                    <input type="text" placeholder="Name">
+               <br>
+                    <input type="email" placeholder="Email">
                 <div class="btn">Subscribe</div>
             </form>
             <div class="search">

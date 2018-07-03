@@ -17,6 +17,11 @@ a {
     color: $darkestColor;
 }
 
+input[type="text"], input[type="email"] {
+    padding-left: 10px;
+    outline: none;
+}
+
 .wrapper {
     max-width: 1200px;
     margin:auto;

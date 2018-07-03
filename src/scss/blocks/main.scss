@@ -2,69 +2,101 @@ main {
     grid-area: main;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    padding-left:20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .article {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 400px;
+    height: 500px;
     border:1px solid lightgrey;
     box-shadow: 2px 2px 2px lightgrey;
-    background-color: #fff;
-    padding: 20px;
-    
+    background-color: #fff;    
 
     &-logo {
-        height:100px;
 
-        &-1 {
-            background-image: url("../img/modern_js.jpg");
-            background-size: contain;
+        &-wrapper {
+
+            height: 200px;
+            overflow: hidden;
+            transition: all 1s;
+
+
+            &:hover .article-logo-1,
+            &:hover .article-logo-2,
+            &:hover .article-logo-3,
+            &:hover .article-logo-4,
+            &:hover .article-logo-5 {
+                transform: scale(1.2);
+            }
         }
     }
+
+        .article-logo-1 {
+            height: 100%;
+            background: url("../img/article-logo-1.jpg") no-repeat center center;
+            background-size: cover;
+            transition: all 0.5s;
+        }
+
+        .article-logo-2 {
+            height: 100%;
+            background: url("../img/article-logo-2.jpeg") no-repeat center center;
+            background-size: cover;
+            transition: all 0.5s;
+
+        }
+
+        .article-logo-3 {
+            height: 100%;
+            background: url("../img/article-logo-3.jpg") no-repeat center center;
+            background-size: cover;
+            transition: all 0.5s;
+
+        }
+        .article-logo-4 {
+            height: 100%;
+            background: url("../img/article-logo-4.jpg") no-repeat center center;
+            background-size: cover;
+            transition: all 0.5s;
+
+        }
+        .article-logo-5 {
+            height: 100%;
+            background: url("../img/article-logo-5.jpg") no-repeat center center;
+            background-size: cover;
+            transition: all 0.5s;
+
+        }
+    
 
     &-name {
         font-size:20px;
         color: $primaryColor;
+        margin: 10px;
     }
 
     &-date {
+        margin: 10px 20px;
         text-align:right;
         font-size: 12px;
         font-style: italic;
     }
 
     &-content {
-        height: 150px;
-        overflow-y:scroll;
-       font-size:14px;
+        margin: 10px 20px;
+        height: 100px;
+        line-height: 2;
+        overflow-y:hidden;
+        font-size:16px;
         text-align:justify;
-        
-        &::-webkit-scrollbar {
-            width: 20px;
-        }
-        
-        /* Track */
-        &::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 5px grey; 
-            border-radius: 10px;
-        }
-         
-        /* Handle */
-        &::-webkit-scrollbar-thumb {
-            background: red; 
-            border-radius: 10px;
-        }
-        
-        /* Handle on hover */
-        &::-webkit-scrollbar-thumb:hover {
-            background: #b30000; 
-        }
     }
 
     &-bottom {
+        margin:10px 20px 30px;
         display: flex;
         justify-content: space-between;
     }
@@ -76,7 +108,6 @@ main {
     &-comments {
         color: $secondaryColor;
         font-weight:bold;
-    }
-    
+    }  
 }
 
