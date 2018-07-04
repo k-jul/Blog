@@ -1,11 +1,11 @@
 html {
-    font-size:16px;
+    font-size: 16px;
     color: $darkestColor;
 }
 
 body {
     font-family: merriweather sans, sans-serif;
-    background-image: url("../img/bg.jpg");
+    background: url("../img/bg.jpeg");
 }
 
 * {
@@ -17,15 +17,15 @@ a {
     color: $darkestColor;
 }
 
-input[type="text"], input[type="email"] {
+input[type="text"],
+input[type="email"] {
     padding-left: 10px;
     outline: none;
 }
 
 .wrapper {
     max-width: 1200px;
-    margin:auto;
-    border:none;
+    margin: auto;
+    border: none;
     background-color: #EDEDEE;
 }
-

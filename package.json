@@ -26,6 +26,6 @@
     "node-normalize-scss": "^8.0.0"
   },
   "dependencies": {
-    "hamburgers": "^0.9.3"
+   
   }
 }

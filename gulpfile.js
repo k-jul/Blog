@@ -1,14 +1,12 @@
-const gulp = require('gulp'); // Сборщик
-const sass = require('gulp-sass'); // Библиотека SASS
-const gulpImagemin = require('gulp-imagemin'); // Библиотека оптимизации изображений
-const browserSync = require('browser-sync').create(); // Библиотека LiveReload
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const gulpImagemin = require('gulp-imagemin');
+const browserSync = require('browser-sync').create();
 const prefixer = require('gulp-autoprefixer');
 const plumber = require('gulp-plumber');
 const autoprefixBrowsers = ['> 1%', 'last 2 versions', 'firefox >= 4', 'safari 7', 'safari 8', 'IE 8', 'IE 9', 'IE 10', 'IE 11'];
 
 
-// Задача запуска сервера и отслеживание файлов
-// При каждом изменении в файлах будут запускатся соотвецтвующие задачи
 gulp.task('server', ['sass'], function() {
     browserSync.init({
         server: "."
@@ -18,22 +16,20 @@ gulp.task('server', ['sass'], function() {
     gulp.watch("*.html").on('change', browserSync.reload);
 });
 
-// Транскомпиляция SCSS в СSS
 gulp.task('sass', function() {
-  return gulp.src('./src/scss/*.scss') // Берем исходные файлы
+  return gulp.src('./src/scss/*.scss')
     .pipe( plumber())
-    .pipe(sass({includePaths: require('node-normalize-scss').includePaths})) // Транскомпиляция в CSS
+    .pipe(sass({includePaths: require('node-normalize-scss').includePaths}))
     .pipe(prefixer({ browsers: autoprefixBrowsers }))
-    .pipe(gulp.dest('./dist/css/')) // Складывает их в папку dist
-    .pipe(browserSync.stream()); // Перезагружаем браузер
+    .pipe(gulp.dest('./dist/css/')) 
+    .pipe(browserSync.stream()); 
 });
 
-// Минификация изображений
 gulp.task('img', function() {
-  return gulp.src('./src/img/*') // Берем исходные файлы
-    .pipe(gulpImagemin()) // Минификация изображений
-    .pipe(gulp.dest('./dist/img/')); // Складывает их в папку dist
+  return gulp.src('./src/img/*') 
+    .pipe(gulpImagemin()) 
+    .pipe(gulp.dest('./dist/img/')); 
 });
 
-// Gulp задача по умолчанию
+
 gulp.task('default', ['sass', 'img', 'server']);
