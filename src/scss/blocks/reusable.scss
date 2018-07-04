@@ -5,7 +5,7 @@
   display: block;
   position: relative;
   top: 0px;
-  left: 20px;
+  left: 0;
   
   z-index: 1;
   
@@ -83,8 +83,8 @@
 #menu
 {
   position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -70px;
+  width: 100vw;
+  margin: -100px 0 0 -30px;
   padding: 50px;
   padding-top: 125px;
   
@@ -102,6 +102,8 @@
 {
   padding: 10px 0;
   font-size: 20px;
+  text-align:center;
+  transition: all 0.3s;
 }
 
 #menu li:hover {

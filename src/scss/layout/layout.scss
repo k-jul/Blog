@@ -3,9 +3,9 @@
     grid-row-gap:20px;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
     grid-template-areas: "header header header"
-                          "main  main  aside"
-                          "main  main  aside"
-                          "main  main  aside"
-                          "main  main  aside"
+                          "main  main   aside"
+                          "main  main   aside"
+                          "main  main   aside"
+                          "main  main   aside"
                           "footer footer footer";
 }

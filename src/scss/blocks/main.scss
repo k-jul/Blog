@@ -16,7 +16,36 @@ main {
     box-shadow: 2px 2px 2px lightgrey;
     background-color: #fff;    
 
-    &-logo-wrapper {
+    &-logo {
+        
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: all 0.5s;
+
+        &-1 {
+            background-image: url("../img/article-logo-1.jpg");
+        }
+
+       &-2 {
+            background-image: url("../img/article-logo-2.jpg");
+        }
+
+        &-3 {
+            background-image: url("../img/article-logo-3.jpg");
+            
+        }
+        &-4 {
+            background-image: url("../img/article-logo-4.jpg");
+            
+        }
+        &-5 {
+            background: url("../img/article-logo-5.jpg") no-repeat center center;
+        }
+
+
+        &-wrapper {
 
             height: 40%;
             overflow: hidden;
@@ -30,45 +59,9 @@ main {
             &:hover .article-logo-5 {
                 transform: scale(1.2);
             }
+
     }
-
-        .article-logo-1 {
-            height: 100%;
-            background: url("../img/article-logo-1.jpg") no-repeat center center;
-            background-size: cover;
-            transition: all 0.5s;
-        }
-
-        .article-logo-2 {
-            height: 100%;
-            background: url("../img/article-logo-2.jpg") no-repeat center center;
-            background-size: cover;
-            transition: all 0.5s;
-
-        }
-
-        .article-logo-3 {
-            height: 100%;
-            background: url("../img/article-logo-3.jpg") no-repeat center center;
-            background-size: cover;
-            transition: all 0.5s;
-
-        }
-        .article-logo-4 {
-            height: 100%;
-            background: url("../img/article-logo-4.jpg") no-repeat center center;
-            background-size: cover;
-            transition: all 0.5s;
-
-        }
-        .article-logo-5 {
-            height: 100%;
-            background: url("../img/article-logo-5.jpg") no-repeat center center;
-            background-size: cover;
-            transition: all 0.5s;
-
-        }
-    
+    }
 
     &-name {
         font-size:20px;

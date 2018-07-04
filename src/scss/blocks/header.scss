@@ -8,6 +8,7 @@
     padding: 20px;
 
     &-right {
+        
         display:flex;
         flex-direction:column;
         justify-content: space-around;
@@ -44,6 +45,11 @@
     justify-content: space-between;
 }
 
+.social {
+    transition: color 0.3s;
+
+}
+
 .fb:hover {
 color: $fbColor;
 }
@@ -61,15 +67,11 @@ color: $fbColor;
 }
 
 .search-field {
-    outline:none;
     border:none;
     border-bottom:1px solid lightgrey;
 
     &:focus {
-        outline:none;
-        border:none;
         border-bottom:1px solid darkgray;
-        box-sizing: border-box;
     }
 
 }
@@ -77,7 +79,13 @@ color: $fbColor;
     display:flex;
     justify-content: space-between;
 
-   &-item:hover {
-       color: $primaryColor;
-   }
-}
+    &-item {
+        
+        transition: color 0.3s;
+
+        &:hover {
+            color: $primaryColor;
+        }
+
+    }
+    }

@@ -1,8 +1,12 @@
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:920px) {
 
     body {
         background: #EDEDEE;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
     }
 }
 
@@ -44,6 +48,7 @@
 
 .header-search .search-field {
     visibility:hidden;
+
 }
 
 .header {
@@ -56,9 +61,12 @@
 
 
 .header .logo {
+    width: 60px;
+    height:60px;
     order:3;
     margin-top: 20px;
-    margin-left: 40%;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 }
@@ -79,6 +87,7 @@
 .footer {
         flex-direction: column-reverse;
         text-align: center;
+        font-size: 12px;
 
         &-right {
             margin-bottom:20px;
