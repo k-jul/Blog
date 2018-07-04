@@ -632,9 +632,10 @@ main {
             -ms-transform: scale(1.2);
                 transform: scale(1.2); }
   .article-name {
-    font-size: 20px;
-    color: #00A27A;
     margin: 10px; }
+    .article-name > a {
+      font-size: 20px;
+      color: #00A27A; }
   .article-date {
     margin: 10px 20px;
     text-align: right;
@@ -662,6 +663,7 @@ main {
   .article-rating {
     color: #ffbb00; }
   .article-comments {
+    font-family: "Arial", sans-serif;
     color: #47ADE8;
     font-weight: bold; }
 

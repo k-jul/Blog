@@ -64,9 +64,13 @@ main {
     }
 
     &-name {
-        font-size:20px;
-        color: $primaryColor;
+        
         margin: 10px;
+
+        & > a {
+            font-size:20px;
+            color: $primaryColor;
+        }
     }
 
     &-date {
@@ -96,6 +100,7 @@ main {
     }
 
     &-comments {
+        font-family: "Arial", sans-serif;
         color: $secondaryColor;
         font-weight:bold;
     }  
