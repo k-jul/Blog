@@ -25,6 +25,7 @@ main {
     &-logo {
 
         height:40%;
+        object-fit: cover;
         transition: all 0.5s;
 
     }

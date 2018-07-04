@@ -612,6 +612,8 @@ main {
     cursor: pointer; }
   .article-logo {
     height: 40%;
+    -o-object-fit: cover;
+       object-fit: cover;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s; }
