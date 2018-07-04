@@ -741,6 +741,9 @@ aside {
     height: 150px;
     width: 150px;
     border-radius: 50%; }
+  .author-about-me {
+    font-style: italic;
+    text-align: justify; }
 
 aside > .socials {
   width: 100%;
@@ -855,7 +858,8 @@ aside > .socials {
     margin: 0px 10px 10px 0;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
-            box-sizing: border-box; }
+            box-sizing: border-box;
+    font-size: 12px; }
 
 .comments {
   width: 100%;

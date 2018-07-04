@@ -32,6 +32,11 @@ aside {
     width:150px;
     border-radius: 50%;
     }
+
+    &-about-me {
+        font-style: italic;
+        text-align: justify;
+    }
 }
 
 aside > .socials {
@@ -126,6 +131,7 @@ aside > .socials {
         padding: 5px 10px;
         margin: 0px 10px 10px 0;
         box-sizing: border-box;
+        font-size: 12px;
 
     }
 }
