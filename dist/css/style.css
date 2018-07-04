@@ -445,7 +445,12 @@ input[type="email"] {
   -moz-transition: all 0.3s;
   transition: all 0.3s; }
 
-#menu li:hover {
+#menu li > a {
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s; }
+
+#menu li:hover > a {
   color: #00A27A; }
 
 #menuToggle input:checked ~ ul {
@@ -558,11 +563,11 @@ input[type="email"] {
      -moz-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .navigation-item {
+  .navigation-item > a {
     -webkit-transition: color 0.3s;
     -moz-transition: color 0.3s;
     transition: color 0.3s; }
-    .navigation-item:hover {
+    .navigation-item > a:hover {
       color: #00A27A; }
 
 main {
@@ -597,45 +602,25 @@ main {
   border: 1px solid lightgrey;
   -webkit-box-shadow: 2px 2px 2px lightgrey;
           box-shadow: 2px 2px 2px lightgrey;
-  background-color: #fff; }
+  background-color: #fff;
+  overflow: hidden; }
+  .article:hover > .article-logo {
+    -webkit-transform: scale(1.1) translateY(-5%);
+       -moz-transform: scale(1.1) translateY(-5%);
+        -ms-transform: scale(1.1) translateY(-5%);
+            transform: scale(1.1) translateY(-5%);
+    cursor: pointer; }
   .article-logo {
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    height: 40%;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s; }
-    .article-logo-1 {
-      background-image: url("../img/article-logo-1.jpg"); }
-    .article-logo-2 {
-      background-image: url("../img/article-logo-2.jpg"); }
-    .article-logo-3 {
-      background-image: url("../img/article-logo-3.jpg"); }
-    .article-logo-4 {
-      background-image: url("../img/article-logo-4.jpg"); }
-    .article-logo-5 {
-      background: url("../img/article-logo-5.jpg") no-repeat center center; }
-    .article-logo-wrapper {
-      height: 40%;
-      overflow: hidden;
-      -webkit-transition: all 1s;
-      -moz-transition: all 1s;
-      transition: all 1s; }
-      .article-logo-wrapper:hover .article-logo-1,
-      .article-logo-wrapper:hover .article-logo-2,
-      .article-logo-wrapper:hover .article-logo-3,
-      .article-logo-wrapper:hover .article-logo-4,
-      .article-logo-wrapper:hover .article-logo-5 {
-        -webkit-transform: scale(1.2);
-           -moz-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-                transform: scale(1.2); }
   .article-name {
-    margin: 10px; }
-    .article-name > a {
-      font-size: 20px;
-      color: #00A27A; }
+    margin: 10px;
+    font-size: 20px;
+    color: #00A27A; }
+    .article-name:hover {
+      cursor: pointer; }
   .article-date {
     margin: 10px 20px;
     text-align: right;
@@ -783,7 +768,9 @@ aside > .socials {
   font-weight: bold;
   text-align: center;
   background-color: #00A27A;
-  color: white; }
+  color: white;
+  border: none;
+  cursor: pointer; }
 
 .search {
   display: -webkit-box;
@@ -801,24 +788,17 @@ aside > .socials {
   .search-text {
     height: 30px;
     width: 65%; }
-  .search > a {
-    outline: none;
+  .search-btn {
     border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
     height: 30px;
+    line-height: 30px;
     width: 35%;
     background-color: #47ADE8;
-    word-spacing: none;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 35%;
-    height: 30px;
     color: white;
-    font-weight: bold; }
-  .search-btn {
-    text-align: center;
-    line-height: 30px; }
+    font-weight: bold;
+    text-align: center; }
+    .search-btn:hover {
+      cursor: pointer; }
 
 .tags {
   display: -webkit-box;
@@ -972,9 +952,14 @@ aside > .socials {
 .copyright {
   margin-left: 10px; }
 
-.nav-footer > a {
+.nav-footer .navigation-item > a {
   margin-right: 10px;
-  color: white; }
+  color: white;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s; }
+  .nav-footer .navigation-item > a:hover {
+    color: #00A27A; }
 
 @media screen and (max-width: 920px) {
   body {

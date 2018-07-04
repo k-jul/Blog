@@ -14,62 +14,28 @@ main {
     height: 500px;
     border:1px solid lightgrey;
     box-shadow: 2px 2px 2px lightgrey;
-    background-color: #fff;    
+    background-color: #fff;
+    overflow: hidden;
+    
+    &:hover > .article-logo {
+        transform: scale(1.1) translateY(-5%);
+        cursor: pointer;
+    }
 
     &-logo {
-        
-        height: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
+
+        height:40%;
         transition: all 0.5s;
 
-        &-1 {
-            background-image: url("../img/article-logo-1.jpg");
-        }
-
-       &-2 {
-            background-image: url("../img/article-logo-2.jpg");
-        }
-
-        &-3 {
-            background-image: url("../img/article-logo-3.jpg");
-            
-        }
-        &-4 {
-            background-image: url("../img/article-logo-4.jpg");
-            
-        }
-        &-5 {
-            background: url("../img/article-logo-5.jpg") no-repeat center center;
-        }
-
-
-        &-wrapper {
-
-            height: 40%;
-            overflow: hidden;
-            transition: all 1s;
-
-
-            &:hover .article-logo-1,
-            &:hover .article-logo-2,
-            &:hover .article-logo-3,
-            &:hover .article-logo-4,
-            &:hover .article-logo-5 {
-                transform: scale(1.2);
-            }
-
     }
-    }
-
     &-name {
         
         margin: 10px;
+        font-size:20px;
+        color: $primaryColor;
 
-        & > a {
-            font-size:20px;
-            color: $primaryColor;
+        &:hover {
+            cursor:pointer;
         }
     }
 

@@ -79,7 +79,7 @@ color: $fbColor;
     display:flex;
     justify-content: space-between;
 
-    &-item {
+    &-item > a {
         
         transition: color 0.3s;
 

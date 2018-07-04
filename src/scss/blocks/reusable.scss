@@ -106,7 +106,11 @@
   transition: all 0.3s;
 }
 
-#menu li:hover {
+#menu li > a {
+  transition: color 0.3s;
+}
+
+#menu li:hover > a  {
   color: $primaryColor;
 }
 

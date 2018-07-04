@@ -35,8 +35,14 @@
     margin-left: 10px;
 }
 
-.nav-footer > a {
+.nav-footer .navigation-item > a {
     margin-right: 10px;
     color: white;
+    transition: color 0.3s;
+
+    &:hover {
+        color: $primaryColor;
+    }
 }
+
 
